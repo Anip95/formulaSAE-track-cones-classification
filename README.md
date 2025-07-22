@@ -87,3 +87,32 @@ The following picture shows the results of the training. It can be seen that, ou
 Here, the training and validation accuracy and loss curves are shown:
 
 ![](assets/trainvalacc.png) ![](assets/trainvalloss.png)
+
+> *There is an errore in the picture. Where it says test, it should say validation.*
+
+Furthermore, the local test dataframe produced as output by the model, underwent the same operations as the training and validation ones.
+
+![](assets/7.png)
+
+
+### Model testing
+
+To test the model, a **csv** file was provided by the competition moderators. Its structure is entirely similar to the file used to train the model, and it's just missing the column **label**.
+
+The operations done on the training, validation and local test dataframes were applied to the test set provided by the moderators; thus, the process (although visible in the provided code) is omitted from this description for semplicity.
+
+The custom callback used for this process is slightly different in terms of thresholds; in fact, it can be seen that the only one set is for the loss, that had to go lower than **0.205**
+
+![](assets/13.png)
+
+The results produced are the following:
+
+![](assets/14.png)
+
+In these final three blocks, what's shown in the picture is the following:
+
+- The trained model predicts the class probabilities;
+- Every softmax vector gets rounded to the nearest 0 or 1 per value, and the index of the highest value is found;
+- +1 is added because the labels needed to be 1 to 4, but the ones in the vector are 0 to 3.
+
+![](assets/15.png)
