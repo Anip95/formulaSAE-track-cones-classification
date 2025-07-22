@@ -109,7 +109,7 @@ The results produced are the following:
 
 ![](assets/14.png)
 
-In these final three blocks, what's shown in the picture is the following:
+In these final three blocks, what's shown is the following:
 
 - The trained model predicts the class probabilities;
 - Every softmax vector gets rounded to the nearest 0 or 1 per value, and the index of the highest value is found;
