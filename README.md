@@ -54,8 +54,26 @@ The pipeline that performs the aforementioned operations is the following:
 
   - The training and validation Pandas dataframes got coverted into NumPy arrays because Keras expects inputs as arrays;
   - Encoding of the validation labels into integers via LabelEncoder;
-  - Application of one-hot encoding through get_dummies. This produces a NumPy array, needed for training with the categorical_crossentropy loss metric;
+  - Application of one-hot encoding through get_dummies. This produces a NumPy array, needed for training with the categorical_crossentropy loss function;
   - Application of the same encoding to the training labels.
 
 ![](assets/5.png)
 
+### Model definition
+
+The neural network used is a simple feedforward model, with the following features:
+
+  - One hidden layer;
+  - One dense hidden layer with 512 neurons and ReLU activation;
+  - Dropout layer (0.3) to prevent overfitting;
+  - Output layer with 4 neurons and softmax activation, suitable for multiclass classification;
+  - categorical_crossentropy as loss function, which works with one-hot encoded labels;
+  - Stochastic Gradient Descent with momentum as optimizer.
+
+![](assets/6.png)
+
+Then, a custom callback SOMT was used, to intervene at different stages of the training process. In particular, the one shown is used to automatically stop training once the model reaches a desired training and validation accuracy.
+
+The training would stop once the train and val thresholds would, respectively, go above **93%** and **91%**
+
+![](assets/8.png)
