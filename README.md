@@ -7,6 +7,8 @@ This project was developed for the *Machine Learning* course as part of my acade
 
 The assignment and the data were hosted on the Kaggle platform as a competition, owned by the University of Napoli "Federico II".
 
+> *Important note about the data*: The dataset used in this project was provided through a private Kaggle competition hosted by the aforementioned university. Due to the competition's intellectual property rules, the data is not included in this repository.
+
 ## Dataset overview
 
 ![](assets/formulaSAE.jpeg)
@@ -18,7 +20,8 @@ These types are:
   - Blue cones, delimiting the right border of the track
   - Yellow cones, delimiting the left border of the track
 
-The aim of this project to properly classify a specific cone detected by sensors given its extracted features.
+The aim of this project is to properly classify a specific cone detected by sensors given its extracted features.
 A label is assigned to each type of cone, going from 1 to 4.
 
+The datasets to train and test the model on are in the **csv** format.
 
