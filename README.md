@@ -9,7 +9,7 @@ The assignment and the data were hosted on the Kaggle platform as a competition,
 
 ## Dataset overview
 
-![](assets/formulaSAE.png)
+![](assets/formulaSAE.jpeg)
 
 The dataset consists of features extracted from various frames of videos depicting different types of cones used in Formula SAE races.
 These types are:
