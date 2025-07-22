@@ -74,6 +74,16 @@ The neural network used is a simple feedforward model, with the following featur
 
 Then, a custom callback SOMT was used, to intervene at different stages of the training process. In particular, the one shown is used to automatically stop training once the model reaches a desired training and validation accuracy.
 
-The training would stop once the train and val thresholds would, respectively, go above **93%** and **91%**
+The training would stop once the train and val thresholds for accuracy would, respectively, go above **93%** and **91%**.
 
 ![](assets/8.png)
+
+### Results of the training
+
+The following picture shows the results of the training. It can be seen that, out of the fixed 500 epochs, the model stopped at **epoch 299**:
+
+![](assets/9.png)
+
+Here, the training and validation accuracy and loss curves are shown:
+
+![](assets/trainvalacc.png) ![](assets/trainvalloss.png)
