@@ -5,6 +5,8 @@
 
 This project was developed for the *Machine Learning* course as part of my academic work as a master's degree student in Computer Engineering.
 
+The code was developed and tested on the **Google Colab** platform.
+
 The assignment and the data were hosted on the Kaggle platform as a competition, owned by the University of Napoli "Federico II".
 
 > *Important note about the data*: The dataset used in this project was provided through a private Kaggle competition hosted by the aforementioned university. Due to the competition's intellectual property rules, the data is not included in this repository.
